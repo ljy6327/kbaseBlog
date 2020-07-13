@@ -1,0 +1,3 @@
+# 忽略idea文件
+.idea/
+target/
