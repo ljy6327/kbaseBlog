@@ -1,9 +1,11 @@
-import Home from './components/Home'
-import Welcome from './components/Welcome'
-import Category from './components/Category'
-import Article from './components/Article'
-import Write from './components/Write'
-import Login from './components/Login'
+//懒加载
+const Home = () => import(/* webpackChunkName: "group-Home" */  '@/components/Home')
+const Welcome = () => import(/* webpackChunkName: "group-Welcome" */  '@/components/Welcome')
+const Category = () => import(/* webpackChunkName: "group-Category" */  '@/components/Category')
+const Article = () => import(/* webpackChunkName: "group-Article" */  '@/components/Article')
+const Write = () => import(/* webpackChunkName: "group-Write" */  '@/components/Write')
+const Login = () => import(/* webpackChunkName: "group-Login" */  '@/components/Login')
+
 const routers = [
     {
         path: '/login',

@@ -9,10 +9,7 @@ import VueQuillEditor from 'vue-quill-editor'
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
-// axios
-import axios from 'axios'
 
-Vue.use(axios);
 Vue.use(VueQuillEditor, /* { default global options } */)
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -25,10 +22,14 @@ const router = new VueRouter({
 
 //路由跳转之前
 router.beforeEach((to, from, next) => {
+  if(localStorage.token && to.path === '/jayne'){
+    return next('/category')
+  }
   if(!localStorage.token){
-    console.log(to.path === '/jayne')
     if (to.path === '/jayne') {
       return next('/login')
+    }else if(to.path === '/article'){
+      return next()
     }else if(to.path !== '/' && to.path !== '/login'){
       return next('/')
     }
@@ -37,6 +38,6 @@ router.beforeEach((to, from, next) => {
 })
 
 new Vue({
-  render: h => h(App),
   router,
+  render: h => h(App),
 }).$mount('#app')

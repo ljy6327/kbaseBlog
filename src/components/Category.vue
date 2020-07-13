@@ -9,7 +9,7 @@
                </div>
                <ul>
                   <li v-for="(item, index) in categoryList" v-bind:key="item.Id"  v-on:click="openArticleList(index,item.Id)" v-bind:class="{selected:index==current}"> 
-                     <span>{{ item.Name}}</span>
+                     <span v-on:dblclick="deleteCategory(item.Id)">{{ item.Name}}</span>
                   </li>
                </ul>
             </div>
@@ -26,7 +26,7 @@
                <ul>
                   <li v-for="item in articleList" v-bind:key="item.Id"> 
                      <router-link :to="{path:'/category/article',query:{articleId:item.Id}}">
-                        <div class="article-title">{{ item.Title }}</div>
+                        <div class="article-title" v-on:dblclick="editorArticle(item.Id)">{{ item.Title }}</div>
                      </router-link>
                      <div class="article-line"></div>
                   </li>
@@ -99,7 +99,7 @@ export default {
          this.articleShow = true;
          this.categoryId = categoryId;
          this.getArticles()
-      }
+      },
    }
 }
 </script>

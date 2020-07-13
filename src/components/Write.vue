@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import { apiSaveArticle } from '@/request/api'
+  import { apiSaveArticle, apiGetArticle } from '@/request/api'
   export default {
     data () {
       return {
@@ -23,15 +23,26 @@
         
       }
     },
-    // 如果需要手动控制数据同步，父组件需要显式地处理changed事件
+    created(){
+        this.getArticle()
+    },
     methods: {
+      getArticle(){
+        apiGetArticle({
+            ArticleId: this.$route.query.articleId
+        }).then(res=>{
+            this.title = res.Data.Title
+            this.content = res.Data.Text
+        })
+      },  
       save(){
         apiSaveArticle({
           category: parseInt(this.$route.query.categoryId),
+          ID: parseInt(this.$route.query.articleId),
           title: this.title,
           text: this.content
         }).then(res =>{
-          console.log(res)
+          this.$message.success(res.Msg);
         })
       }
     },

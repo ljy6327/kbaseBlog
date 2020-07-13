@@ -15,7 +15,7 @@ export default {
 <style>
 @import './css/global.css'; /*引入公共样式*/
 #app {
-  color: #FFA500;
+  color: #52CC76;
   height: 100%;
 }
 body,html {
@@ -36,7 +36,7 @@ ul,li{
 }
 a{ 
   text-decoration:none; 
-  color: #FFA500;
+  color: #52CC76;
 } 
 button{
   border: 0;

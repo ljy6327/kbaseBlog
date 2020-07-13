@@ -21,7 +21,10 @@
           email: this.email,                    
           password: this.password               
         }).then(res => {
-          if(res.Success){      
+          if(res.Success){     
+            if(res.Data === null){
+               this.$message.error(res.Msg);
+            } 
             localStorage.setItem('token',res.Data.token); 
             localStorage.setItem('authorId',res.Data.authorId); 
             this.$router.push({ path: '/category'})
