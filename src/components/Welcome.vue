@@ -1,13 +1,90 @@
 <template>
     <div id="welcome">
       <div class="atrile">
-        <ul>
+        <el-timeline>
+          <el-timeline-item timestamp="2018/4/12" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/3" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+           <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+           <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2018/4/2" placement="top">
+            <el-card>
+              <h4>更新 Github 模板</h4>
+            </el-card>
+          </el-timeline-item>
+        </el-timeline>
+        <!-- <ul>
           <li  v-for="item in articleList" v-bind:key="item.Id">
             <router-link :to="{path:'/article',query:{articleId:item.Id}}">
               <span class="title">{{ item.Title }}</span>
             </router-link>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
 </template>
@@ -34,6 +111,9 @@ export default {
 }
 </script>
 <style>
+.el-timeline{
+  margin: 2px;
+}
 #welcome{
   width: 100%;
   height: 100%;
@@ -47,32 +127,12 @@ export default {
   width: 0px;
 }
 #welcome .atrile{
-  width: 650px;
-  height: 100%;
-  margin:0 auto;
-  color: #000;
+  text-align: left;
+  width: 670px;
+  height: 92%;
+  margin: 30px 60px;
   overflow-x:hidden;
   overflow-y:auto;
 }
-#welcome .atrile ul li{
-  text-align: left;
-  padding: 40px 60px 0px 60px;
-}
-#welcome .atrile .title{
-  font-size: 25px;
-  font-weight: 800;
-  color: #fff;
-  font-family: KaiTi;
-}
-#welcome .atrile .title:hover{
-  color: #52CC76;
-}
-#welcome .atrile .content{
-  padding-left: 5px;
-  font-size: 20px;
-  color: rgb(80, 78, 78);
-  white-space: nowrap;
-}
-
 
 </style>

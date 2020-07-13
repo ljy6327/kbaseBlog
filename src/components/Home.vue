@@ -1,11 +1,13 @@
 <template>
     <el-row>
         <el-col :span="7">
-            <div id="home" ref="home">
-                <div class="flag">
-                    <img src="../assets/chifan.png"/>
-                </div> 
-            </div>
+             <router-link :to="{path:'/'}">
+                <div id="home" ref="home">
+                    <div class="flag">
+                        <img src="../assets/chifan.png"/>
+                    </div> 
+                </div>
+            </router-link>
         </el-col>
         <el-col :span="17">
             <router-view></router-view>
