@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color:rgba(255, 255, 255, 0.3);
  }
 
   #login .input{
@@ -74,16 +74,16 @@
 .sign {
   background-image: radial-gradient(
     ellipse 50% 35% at 50% 50%,
-    #6b1839,
+    #f3f3ea,
     transparent
   );
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 5em;
   color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #012E40,
+    -0.2rem 0.1rem 1rem #012E40, 0.2rem 0.1rem 1rem #012E40,
+    0 -0.5rem 2rem #62827D, 0 0.5rem 3rem #62827D;
   animation: shine 2s forwards, flicker 3s infinite;
   margin-bottom: 70px;
 }
@@ -94,18 +94,18 @@
   36%,
   75% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #012E40,
+      -0.2rem 0.1rem 1rem #012E40, 0.2rem 0.1rem 1rem #012E40,
+      0 -0.5rem 2rem #62827D, 0 0.5rem 3rem #62827D;
   }
   28%,
   33% {
-    color: #ff65bd;
+    color: #012E40;
     text-shadow: none;
   }
   82%,
   97% {
-    color: #ff2483;
+    color: #62827D;
     text-shadow: none;
   }
 }
@@ -120,14 +120,14 @@
 
 @keyframes shine {
   0% {
-    color: #6b1839;
+    color: #f3f3ea;
     text-shadow: none;
   }
   100% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #012E40,
+      -0.2rem 0.1rem 1rem #012E40, 0.2rem 0.1rem 1rem #012E40,
+      0 -0.5rem 2rem #62827D, 0 0.5rem 3rem #62827D;
   }
 }
 
